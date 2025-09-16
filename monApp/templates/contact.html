@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{title}}</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css')}}">
-</head>
+{% extends "base.html" %}
+
+{% block main %}
 <body>
   <h1>Voici le contact d'une pomme de terre</h1>
-  <a href="mailto:3.1415926cherry@gmail.com">Contact</a>
-</body>
-</html>
+  <a href="mailto:3.1415926cherry@gmail.com">Contact</a></body>
+{% endblock %}

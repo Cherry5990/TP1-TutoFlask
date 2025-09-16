@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{title}}</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css')}}">
-</head>
+{% extends "base.html" %}
+
+{% block main %}
 <body>
   <h1>Ceci est à propos d'une pomme de terre</h1>
   <a href="{{ url_for('contact') }}">Ici on accède aux contacts</a>
   <img src="{{ url_for('static', filename = 'photo_patates.jpeg') }}" alt="Ici se trouve ma photo">
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci expedita earum doloribus, aliquam corporis non commodi magnam incidunt, dignissimos nam eius corrupti laborum eum. Assumenda beatae vitae dignissimos inventore enim?</p>
 </body>
-</html>
+{% endblock %}
